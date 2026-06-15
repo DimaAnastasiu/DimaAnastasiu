@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervă o Dată | EventMaster MD</title>
+    <link rel="stylesheet" href="../org.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">EventMaster <span>MD</span></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../servicii/index.html">Servicii</a></li>
+                <li><a href="../portofoliu/index.html">Portofoliu</a></li>
+                <li><a href="index.html" class="active">Rezervari</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="rezervari" class="container">
+        <h2 class="section-title">Rezerva o Data</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="name">Nume Complet *</label>
+                <input type="text" id="name" required placeholder="Ex: Dima Anastasiu">
+            </div>
+            <div class="form-group">
+                <label for="phone">Numar Telefon *</label>
+                <input type="tel" id="phone" required placeholder="Ex: +373 333 333 33">
+            </div>
+            <div class="form-group">
+                <label for="date">Data Evenimentului *</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Tipul Evenimentului</label>
+                <select id="type">
+                    <option value="nunta">Nunta</option>
+                    <option value="cumetrie">Botez / Cumetrie</option>
+                    <option value="corporativ">Corporate</option>
+                    <option value="aniversare">Aniversare</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-block">Trimite Solicitarea</button>
+        </form>
+    </section>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
