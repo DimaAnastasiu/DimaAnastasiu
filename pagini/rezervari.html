@@ -13,39 +13,65 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../servicii/index.html">Servicii</a></li>
-                <li><a href="../portofoliu/index.html">Portofoliu</a></li>
-                <li><a href="index.html" class="active">Rezervari</a></li>
-                <li><a href="../contact/index.html">Contact</a></li>
+                <li><a href="servicii.html">Servicii</a></li>
+                <li><a href="portofoliu.html">Portofoliu</a></li>
+                <li><a href="rezervari.html" class="active">Rezervari</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="rezervari" class="container">
         <h2 class="section-title">Rezerva o Data</h2>
-        <form class="booking-form">
+
+        <form class="booking-form"
+              action="https://api.sheetmonkey.io/form/icMkfijvuGnxJGpqrZqMuX"
+              method="post">
+
             <div class="form-group">
                 <label for="name">Nume Complet *</label>
-                <input type="text" id="name" required placeholder="Ex: Dima Anastasiu">
+                <input type="text"
+                       id="name"
+                       name="Nume Complet"
+                       required
+                       placeholder="Ex: Dima Anastasiu">
             </div>
+
             <div class="form-group">
                 <label for="phone">Numar Telefon *</label>
-                <input type="tel" id="phone" required placeholder="Ex: +373 333 333 33">
+                <input type="tel"
+                       id="phone"
+                       name="Numar Telefon"
+                       required
+                       placeholder="Ex:   079 498 241">
             </div>
+
             <div class="form-group">
                 <label for="date">Data Evenimentului *</label>
-                <input type="date" id="date" required>
+                <input type="date"
+                       id="date"
+                       name="Data Evenimentului"
+                       required>
             </div>
+
             <div class="form-group">
                 <label for="type">Tipul Evenimentului</label>
-                <select id="type">
+                <select id="type" name="Tipul Evenimentului">
                     <option value="nunta">Nunta</option>
                     <option value="cumetrie">Botez / Cumetrie</option>
                     <option value="corporativ">Corporate</option>
                     <option value="aniversare">Aniversare</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-block">Trimite Solicitarea</button>
+
+            <input type="hidden"
+                   name="Created"
+                   value="x-sheetmonkey-current-date-time">
+
+            <button type="submit" class="btn btn-block">
+                Trimite Solicitarea
+            </button>
+
         </form>
     </section>
 
