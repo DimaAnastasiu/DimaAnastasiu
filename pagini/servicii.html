@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezervă o Dată | EventMaster MD</title>
+    <title>Servicii | EventMaster MD</title>
     <link rel="stylesheet" href="../org.css">
 </head>
 <body>
@@ -13,66 +13,33 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../servicii/index.html">Servicii</a></li>
-                <li><a href="../portofoliu/index.html">Portofoliu</a></li>
-                <li><a href="index.html" class="active">Rezervari</a></li>
-                <li><a href="../contact/index.html">Contact</a></li>
+                <li><a href="servicii.html" class="active">Servicii</a></li>
+                <li><a href="portofoliu.html">Portofoliu</a></li>
+                <li><a href="rezervari.html">Rezervari</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="rezervari" class="container">
-        <h2 class="section-title">Rezerva o Data</h2>
-
-        <form class="booking-form"
-              action="https://api.sheetmonkey.io/form/icMkfijvuGnxJGpqrZqMuX"
-              method="post">
-
-            <div class="form-group">
-                <label for="name">Nume Complet *</label>
-                <input type="text"
-                       id="name"
-                       name="Nume Complet"
-                       required
-                       placeholder="Ex: Dima Anastasiu">
+    <section id="servicii" class="container">
+        <h2 class="section-title">Serviciile Noastre</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Nunti Elegante</h3>
+                <p>Planificare completa, decoruri de vis, coordonare in ziua evenimentului si alegerea furnizorilor perfecti.</p>
+                <img src="https://vipmagazin-md.b-cdn.net/wp-content/uploads/2022/12/DSC_5998-scaled.jpg" alt="Nunti Elegante">
             </div>
-
-            <div class="form-group">
-                <label for="phone">Numar Telefon *</label>
-                <input type="tel"
-                       id="phone"
-                       name="Numar Telefon"
-                       required
-                       placeholder="Ex:  079 498 241">
+            <div class="card">
+                <h3>Botezuri & Cumetrii</h3>
+                <p>Momente magice pentru cei mici, organizate cu atentie, tematici personalizate si atmosfera calda.</p>
+                <img src="https://www.fotobotez.com/wp-content/uploads/fotograf-botez-bucuresti-traditii-si-obiceiuri-02-nasii.jpg" alt="Botezuri & Cumetrii">
             </div>
-
-            <div class="form-group">
-                <label for="date">Data Evenimentului *</label>
-                <input type="date"
-                       id="date"
-                       name="Data Evenimentului"
-                       required>
+            <div class="card">
+                <h3>Petreceri Corporative</h3>
+                <p>Evenimente de echipa, gale, lansari de produse si petreceri de final de an, adaptate brandului tau.</p>
+                <img src="https://select.md/wp-content/uploads/2017/10/G76Q1791-1024x683.jpg" alt="Petreceri Corporative">
             </div>
-
-            <div class="form-group">
-                <label for="type">Tipul Evenimentului</label>
-                <select id="type" name="Tipul Evenimentului">
-                    <option value="nunta">Nunta</option>
-                    <option value="cumetrie">Botez / Cumetrie</option>
-                    <option value="corporativ">Corporate</option>
-                    <option value="aniversare">Aniversare</option>
-                </select>
-            </div>
-
-            <input type="hidden"
-                   name="Created"
-                   value="x-sheetmonkey-current-date-time">
-
-            <button type="submit" class="btn btn-block">
-                Trimite Solicitarea
-            </button>
-
-        </form>
+        </div>
     </section>
 
     <script src="../script.js"></script>
